@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+ 
+
+ <h1>Hello my darling</h1>
+	
+	<div>
+	привет, это просто  строка   для того что б отображать что-то на своем уровне
+	</div>
+  
+  <h1>Загоровок номер 2</h1>
+  <div>
+	содержимое этого тега №2
+  </div>
+  
+  <div> 
+		<ul><strong><em>Cписок</em></strong></ul>
+		<hr/>
+		<li id="123">элкмент 1 </li>
+		<hr/>
+		<li id="124">элкмент 2 </li>
+		<hr/>
+		<li id="125">элемент 3 </li>
+		<hr/>
+		<li id ="126">элемент 4</li>
+		<hr/>
+		<label>
+		try
+		</label>
+  
+  
+  </div>
+  <script>
+  // **********************************это конструктор****************************************************************
+  var Oop = function (id, color1, color2, color3, time1, time2, time3) {
+				var b = document.getElementById(id);
+		
+			function w () {
+					return  b.style.background = color1;
+				}
+					var o = setInterval(w,time1);
+		
+			function t () {
+				return b.style.background = color2;
+			}
+				setInterval(t, time2);
+				
+			function k () {
+				return b.style.background = color3;
+			}
+				setInterval(t, time3);
+		}
+//********************************************************************************************************************************			
+			
+			
+			
+	var n1 = new Oop(123, "red", "grey", "silver", 1000, 2000, 3000);
+	var n2 = new Oop(124, "blue", "red", "grey", 1000, 2000, 3000);
+	var n3 = new Oop(125, "silver", "blue", "red", 1000, 2000, 3000);
+	var n4 = new Oop(126, "grey","silver", "blue", 1000, 2000, 3000);
+	
+			
+			
+  </script>
+  
+  
+  
+  
+	
+  
+
+
+</body>
+
+</html>
